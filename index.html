@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Your Name – Portfolio</title>
+  <meta name="description" content="Personal portfolio of Your Name — web developer, designer, and problem solver." />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#home" class="brand" aria-label="Go to home">YourName</a>
+
+      <nav class="nav" id="primary-nav" aria-label="Primary navigation">
+        <ul class="nav-list">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button class="theme-toggle" id="theme-toggle" aria-pressed="false" title="Toggle dark mode">🌓</button>
+        <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero-inner">
+        <div class="hero-content">
+          <h1>Hi, I'm Your Name.</h1>
+          <p class="lead">I build modern, accessible web experiences — HTML, CSS, JavaScript, and more.</p>
+          <p>
+            <a class="btn primary" href="#projects">See my work</a>
+            <a class="btn ghost" href="#contact">Get in touch</a>
+          </p>
+        </div>
+        <div class="hero-visual" aria-hidden="true">
+          <!-- SVG placeholder illustration -->
+          <svg width="320" height="220" viewBox="0 0 320 220" fill="none" xmlns="http://www.w3.org/2000/svg" role="img">
+            <rect rx="20" width="320" height="220" fill="url(#g)"/>
+            <defs>
+              <linearGradient id="g" x1="0" x2="1">
+                <stop offset="0" stop-color="#7b61ff"/>
+                <stop offset="1" stop-color="#00d4ff"/>
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <section class="section about" id="about">
+      <div class="container grid grid-2">
+        <div class="about-text">
+          <h2>About me</h2>
+          <p>I’m a web developer focused on creating user-friendly interfaces and polished experiences. I enjoy turning ideas into products and learning new tools and patterns along the way.</p>
+          <ul class="meta">
+            <li><strong>Location:</strong> Your City</li>
+            <li><strong>Available:</strong> Open for freelance & contract</li>
+          </ul>
+        </div>
+        <div class="about-photo" aria-hidden="true">
+          <div class="photo-placeholder">Your Photo</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section skills" id="skills">
+      <div class="container">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+          <div class="skill">
+            <h3>Frontend</h3>
+            <p>HTML, CSS, JavaScript, React, Vue</p>
+          </div>
+          <div class="skill">
+            <h3>Design</h3>
+            <p>Figma, Accessibility, UI/UX</p>
+          </div>
+          <div class="skill">
+            <h3>Tools</h3>
+            <p>Git, Webpack, Vite, Node.js</p>
+          </div>
+          <div class="skill">
+            <h3>Testing</h3>
+            <p>Jest, React Testing Library, Cypress</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section projects" id="projects">
+      <div class="container">
+        <h2>Selected projects</h2>
+        <div class="projects-grid">
+          <article class="project-card">
+            <div class="project-media" role="img" aria-label="Project mockup 1">Demo</div>
+            <div class="project-body">
+              <h3 class="project-title">Project One</h3>
+              <p class="project-desc">Short description of the project and the technologies used.</p>
+              <p class="project-links">
+                <a href="#" class="btn small">Live</a>
+                <a href="#" class="btn small ghost">Code</a>
+              </p>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-media" role="img" aria-label="Project mockup 2">Demo</div>
+            <div class="project-body">
+              <h3 class="project-title">Project Two</h3>
+              <p class="project-desc">Another brief description. Replace with your own project details.</p>
+              <p class="project-links">
+                <a href="#" class="btn small">Live</a>
+                <a href="#" class="btn small ghost">Code</a>
+              </p>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-media" role="img" aria-label="Project mockup 3">Demo</div>
+            <div class="project-body">
+              <h3 class="project-title">Project Three</h3>
+              <p class="project-desc">Short summary. Add links to demos, repos or case studies.</p>
+              <p class="project-links">
+                <a href="#" class="btn small">Live</a>
+                <a href="#" class="btn small ghost">Code</a>
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact">
+      <div class="container grid grid-2">
+        <div>
+          <h2>Contact</h2>
+          <p>If you'd like to work together or just say hi, send a message — I’ll get back to you soon.</p>
+
+          <form id="contact-form" class="contact-form" novalidate>
+            <div class="form-row">
+              <label for="name">Name</label>
+              <input id="name" name="name" type="text" required minlength="2" placeholder="Your name">
+            </div>
+            <div class="form-row">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" required placeholder="you@domain.com">
+            </div>
+            <div class="form-row">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" required minlength="10" placeholder="Tell me about your project"></textarea>
+            </div>
+            <div class="form-row">
+              <button type="submit" class="btn primary">Send message</button>
+              <div id="form-status" class="form-status" aria-live="polite"></div>
+            </div>
+          </form>
+        </div>
+
+        <aside class="contact-card" aria-label="Contact details">
+          <h3>Contact info</h3>
+          <p><strong>Email:</strong> <a href="mailto:you@domain.com">you@domain.com</a></p>
+          <p><strong>Phone:</strong> <a href="tel:+1234567890">+1 (234) 567-890</a></p>
+          <p><strong>Follow:</strong></p>
+          <p class="socials">
+            <a href="#" aria-label="GitHub link">GitHub</a> ·
+            <a href="#" aria-label="LinkedIn link">LinkedIn</a> ·
+            <a href="#" aria-label="Twitter link">Twitter</a>
+          </p>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Your Name. Built with care.</p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
